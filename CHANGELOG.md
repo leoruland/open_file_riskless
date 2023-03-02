@@ -1,3 +1,5 @@
+## 3.2.2
+* Remove support for APK installation - thus eliminating the permission REQUEST_INSTALL_PACKAGES
 ## 3.2.1
 * Add command parser before create system call [#144](https://github.com/crazecoder/open_file/issues/144) (thanks to [@mludovico](https://github.com/mludovico))
 * Fix startActivity() might have NPE issue with filePath on Android (thanks to [@AlexV525](https://github.com/AlexV525))
