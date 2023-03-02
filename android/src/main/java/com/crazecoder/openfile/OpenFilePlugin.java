@@ -94,10 +94,6 @@ public class OpenFilePlugin implements MethodCallHandler
             }
             if (pathRequiresPermission()) {
                 if (hasPermission(Manifest.permission.READ_EXTERNAL_STORAGE)) {
-//                    if (TYPE_STRING_APK.equals(typeString)) {
-//                        openApkFile();
-//                        return;
-//                    }
                     startActivity();
                 } else {
                     ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_CODE);
@@ -337,6 +333,12 @@ public class OpenFilePlugin implements MethodCallHandler
         }
         startActivity();
         return true;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    @Override
+    public boolean onActivityResult(int requestCode, int resultCode, Intent intent) {
+        return false;
     }
 
     private void result(int type, String message) {
