@@ -1,14 +1,14 @@
-# open_file
+# open_file_riskless
 
 A plug-in that can open files for android
 
 ## Usage
 
-To use this plugin, add [open_file](https://pub.dartlang.org/packages/open_file#-installing-tab-)as a dependency in your pubspec.yaml file.
+To use this plugin, add [open_file_riskless](https://pub.dartlang.org/packages/open_file_riskless#-installing-tab-)as a dependency in your pubspec.yaml file.
 
 ## Example
 ```
-import 'package:open_file/open_file.dart';
+import 'package:open_file_riskless/open_file_riskless.dart';
 
 OpenFile.open("/sdcard/text.txt");
 ```

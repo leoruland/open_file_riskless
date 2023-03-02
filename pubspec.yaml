@@ -1,8 +1,8 @@
-name: open_file
+name: open_file_riskless
 description: A plug-in that can call native APP to open files with string result in flutter, support iOS(UTI) / android(intent) / PC(ffi) / web(dart:html)
 version: 3.2.1
 author: crazecoder <21527312@qq.com>
-homepage: https://github.com/crazecoder/open_file
+homepage: https://github.com/crazecoder/open_file_riskless
 
 dependencies:
   flutter:
